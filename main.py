@@ -53,7 +53,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Learning Rate Scheduler
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=100, factor=0.8, verbose=True)
-
+learning_rates = []
 loss_history = []
 test_loss_history = []  # Store test losses
 progress_bar = tqdm(range(epochs), desc='Training Progress')
@@ -77,6 +77,7 @@ for epoch in progress_bar:
         
     # Update learning rate scheduler
     scheduler.step(test_loss)
+    learning_rates.append(optimizer.param_groups[0]['lr'])
 
 
 # Evaluate on test set
@@ -100,9 +101,9 @@ plt.savefig('loss_curves.png')  # Save the plot
 plt.show()
 
 # 2. Learning Rate Schedule
-lrs = [group['lr'] for group in optimizer.param_groups]  # Extract learning rates
+
 plt.figure(figsize=(10, 5))
-plt.plot(lrs, color='green')
+plt.plot(learning_rates, label='Learning Rate', color='green')
 plt.title('Learning Rate Schedule', fontsize=14)
 plt.xlabel('Epoch', fontsize=12)
 plt.ylabel('Learning Rate', fontsize=12)
