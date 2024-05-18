@@ -34,6 +34,8 @@
           - [安装步骤](#安装步骤)
     - [文件目录说明](#文件目录说明)
     - [部署](#部署)
+    - [可视化结果](#可视化结果)
+    - [模型训练控制](#模型训练控制)
     - [使用到的框架](#使用到的框架)
     - [贡献](#贡献)
     - [作者](#作者)
@@ -90,12 +92,29 @@ Training Progress:  31%|███████████▌                    
 ```
 
 
-> 修改`main.py`里面的 
-```python
-epochs = 50000
-```
-> 来控制训练周期从而控制最后的效果。 
+### 可视化结果
 
+项目中生成了以下几种类型的图像，帮助理解和评估模型的性能：
+
+1. **训练和测试损失图（Training and Test Loss Per Epoch）**: 这个图展示了在训练过程中，训练和测试集上的损失如何变化。它帮助我们监控模型是否过拟合或欠拟合。
+   ![Training and Test Loss](loss_curves.png)
+
+2. **学习率计划图（Learning Rate Schedule）**: 显示了训练过程中学习率的变化情况。这有助于我们了解学习率调整对模型训练的影响。
+   ![Learning Rate Schedule](learning_rate_schedule.png)
+
+3. **特征重要性热图（Feature Correlation Heatmap）**: 通过热图展示了数据特征之间的相关性，这对于理解哪些特征对模型影响较大尤为重要。
+   ![Feature Correlation Heatmap](feature_correlation_heatmap.png)
+
+4. **输出预测与真实值对比图（Output Predictions vs. True Values）**: 这个散点图矩阵展示了模型的预测值与实际值之间的关系，帮助评估模型预测的准确性。
+   ![Output Predictions vs. True Values](prediction_scatterplot_matrix.png)
+
+### 模型训练控制
+
+通过修改`main.py`文件中的`epochs`变量，你可以控制模型的训练周期，进而影响模型的最终性能：
+
+```python
+epochs = 50000  # 控制训练周期
+```
 
 
 ### 使用到的框架
