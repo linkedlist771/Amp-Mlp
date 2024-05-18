@@ -37,7 +37,6 @@
     - [使用到的框架](#使用到的框架)
     - [贡献](#贡献)
     - [作者](#作者)
-    - [版权说明](#版权说明)
 
 ### 上手指南
 
@@ -111,13 +110,18 @@ epochs = 50000
 
 213193509seu@gmail.com
 
-### 版权说明
-
-此项目签署了MIT授权许可，详情请参阅 [LICENSE](LICENSE)
-
-<!-- 链接 -->
-[your-project-path]:your_username_/Amp-Mlp
-[contributors-shield]: https://img.shields.io/github/contributors/your_username_/Amp-Mlp.svg?style=flat-square
-[contributors-url]: https://github.com/your_username_/Amp-Mlp/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/your_username_/Amp-Mlp.svg?style=flat-square
-[forks-url]: https://github.com/your_username_/Amp-M
+该项目签署了MIT 授权许可，详情请参阅 [LICENSE](LICENSE)
+<!-- links -->
+[your-project-path]:shaojintian/Best_README_template
+[contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square
+[contributors-url]: https://github.com/shaojintian/Best_README_template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square
+[forks-url]: https://github.com/shaojintian/Best_README_template/network/members
+[stars-shield]: https://img.shields.io/github/stars/shaojintian/Best_README_template.svg?style=flat-square
+[stars-url]: https://github.com/shaojintian/Best_README_template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg
+[license-shield]: https://img.shields.io/github/license/shaojintian/Best_README_template.svg?style=flat-square
+[license-url]: https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/shaojintian
