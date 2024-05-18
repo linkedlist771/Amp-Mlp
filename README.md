@@ -81,9 +81,20 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+输出结果:
+```bash
+Training Progress:  30%|███████████▎                         | 15230/50000 [00:12<00:27, 1280.55it/s, loss=95.1, test_loss=89.5]Epoch 15270: reducing learning rate of group 0 to 8.0000e-04.
+Training Progress:  31%|███████████▉                           | 15362/50000 [00:12<00:26, 1291.34it/s, loss=95, test_loss=89.5]Epoch 15371: reducing learning rate of group 0 to 6.4000e-04.
+Training Progress:  31%|███████████▎                         | 15362/50000 [00:12<00:26, 1291.34it/s, loss=94.9, test_loss=89.4]Epoch 15472: reducing learning rate of group 0 to 5.1200e-04.
+Training Progress:  31%|███████████▍                         | 15492/50000 [00:12<00:27, 1273.47it/s, loss=94.9, test_loss=89.4]Epoch 15573: reducing learning rate of group 0 to 4.0960e-04.
+Training Progress:  31%|███████████▌                         | 15620/50000 [00:12<00:28, 1226.60it/s, loss=94.8, test_loss=89.4]Epoch 15674: reducing learning rate of group 0 to 3.2768e-04.
+```
+
+
 > 修改`main.py`里面的 
 ```python
-epochs = 5000000
+epochs = 50000
 ```
 > 来控制训练周期从而控制最后的效果。 
 

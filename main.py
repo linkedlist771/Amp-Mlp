@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from tqdm.auto import tqdm
 import matplotlib.pyplot as plt
 import seaborn as sns  # For additional plot types
-epochs = 5000000
+epochs = 50000
 
 # Reload the data
 data = pd.read_excel('cascode.xlsx')
